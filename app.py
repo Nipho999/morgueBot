@@ -83,5 +83,5 @@ def add_comment(movie_id):
     return redirect(url_for("movie_details", movie_id=movie_id))
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host='0.0.0.0')
     #app.run(host='0.0.0.0', ssl_context=('cert.pem', 'key.pem'))
